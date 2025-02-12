@@ -39,7 +39,7 @@ function Moviedet(){
     return(
         <>
             {
-                myfav.some(fav => fav.id === mov.id) ?
+                myfav.some(fav => fav.id === movies.id) ?
                 (
                     <Card key={movies.id}  title={movies.original_title} type={movies.overview} img={`https://image.tmdb.org/t/p/w500${movies.poster_path}`} favimg={Filledstar}  fav="Added to faviortes" clc={() => changepage()}  btntext="Go back"/>
                 ):(
